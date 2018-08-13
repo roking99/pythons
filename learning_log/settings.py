@@ -23,7 +23,7 @@ SECRET_KEY = 'u19(vxe42+$p=$e**xt^5(1&isw=7@63s=98ih-$eb2#mr3vkn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['learning-log.herokuapp.com']
+ALLOWED_HOSTS = ['lj-learning-log.herokuapp.com']
 
 # ALLOWED_HOSTS = ['localhost']
 
@@ -134,7 +134,7 @@ if os.getcwd() == '/app':
     # 让request.is_secure()承认X-Forwarded-Proto头
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     # 只允许Heroku托管这个项目
-    ALLOWED_HOSTS = ['learning-log.herokuapp.com']
+    ALLOWED_HOSTS = ['lj-learning-log.herokuapp.com']
     DEBUG = False
     # 静态资产配置
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
